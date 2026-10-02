@@ -334,7 +334,7 @@
     <div class="snapshot-warning"><strong>先看数据边界：</strong>分析师目标价与评级属于第三方观点，不等于事实或投资建议；借券利用率与借券费率无免费公开源，本页仅呈现 FINRA 数据并标注边界；公司自 FY2027 Q1 起不再单独披露 Gaming 等分部，不存在官方细分数据；"为什么关注"为研究观点、已逐条标注。</div>
 
     <nav class="section-nav" aria-label="页面章节">
-      <a href="#market">行情</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
+      <a href="#market">行情</a><a href="#options-structure">期权结构</a><a href="#financials">财务</a><a href="#short">做空</a><a href="#analysts">分析师</a><a href="#events">事件雷达</a><a href="#thesis">为什么关注</a><a href="#risks">风险</a>
     </nav>
 
     <section class="metrics" aria-label="关键数字">
@@ -396,6 +396,31 @@
         <div class="datum"><span class="k">市值口径</span><span class="v">≈$5.50T</span><span class="k">marketbeat / fool.com，2026-10-01；10/01 口径约 $5.50T，随股价浮动</span></div>
         <div class="datum"><span class="k">季度股息</span><span class="v">$0.25 / 股</span><span class="k">已于 2026-10-01 派发（股权登记日 9/10）</span></div>
       </div>
+    </section>
+
+    <section class="section" id="options-structure">
+      <div class="section-head"><h2>期权结构</h2><span class="section-index">01A / OPTIONS STRUCTURE</span></div>
+      <p style="margin:0 0 12px;font-size:13px;color:var(--muted)">数据截至 2026-10-01，每周更新</p>
+
+      <div class="panel" style="padding:16px 18px;margin-bottom:12px;border-left:4px solid var(--accent)">
+        <div style="display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-bottom:8px">
+          <span style="font-size:12px;color:var(--muted);letter-spacing:.04em">做市商 Gamma 状态</span>
+          <span class="tag" style="color:var(--positive);border-color:var(--positive);background:transparent;font-size:12px;padding:4px 10px">正 Gamma · 盘整/钉价倾向</span>
+        </div>
+        <p style="margin:0;font-size:13.5px;color:var(--muted)">当前「<strong style="color:var(--ink)">正 Gamma · 盘整/钉价倾向</strong>」（正 Gamma 时做市商涨卖跌买、波动易被压缩；负 Gamma 时波动被放大）</p>
+      </div>
+
+      <div class="data-grid">
+        <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">正</span><span class="k">约 +$21 亿，FlashAlpha</span></div>
+        <div class="datum"><span class="k">Call Wall</span><span class="v">$235</span><span class="k">阻力参考</span></div>
+        <div class="datum"><span class="k">Put Wall</span><span class="v">$230</span><span class="k">支撑参考</span></div>
+        <div class="datum"><span class="k">Max Pain</span><span class="v">$200</span><span class="k">做市商对冲参考位</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.85</span><span class="k">Call 781.8 万张／Put 667.2 万张</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">29.5%</span><span class="k">IV Rank 1/100，历史低位</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$17.83</span><span class="k">±7.8%</span></div>
+      </div>
+
+      <p style="margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.7">数据来源 OptiView、FlashAlpha（OPRA 延迟数据）。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</p>
     </section>
 
     <section class="section" id="financials">
