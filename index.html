@@ -401,7 +401,7 @@
 
     <section class="section" id="options-structure">
       <div class="section-head"><h2>期权结构</h2><span class="section-index">01A / OPTIONS STRUCTURE</span></div>
-      <p style="margin:0 0 12px;font-size:13px;color:var(--muted)">数据截至：FlashAlpha 2026-10-02 14:01 ET（盘中快照）· OptiView 2026-10-01 15:55 ET（尚未滚动至 10-02）——两源日期分开标注，不混用</p>
+      <p style="margin:0 0 12px;font-size:13px;color:var(--muted)">数据截至：FlashAlpha 2026-10-02 14:01 ET（盘中快照）· OptiView 2026-10-02——两源日期分开标注，不混用</p>
 
       <div class="panel" style="padding:16px 18px;margin-bottom:12px;border-left:4px solid var(--accent)">
         <div style="display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-bottom:8px">
@@ -415,13 +415,15 @@
         <div class="datum"><span class="k">净做市商 GEX</span><span class="v pos">正</span><span class="k">约 +$33 亿（+$3.3B）· FlashAlpha 2026-10-02 14:01 ET</span></div>
         <div class="datum"><span class="k">Call Wall</span><span class="v">$235</span><span class="k">FlashAlpha 2026-10-02 · 阻力参考</span></div>
         <div class="datum"><span class="k">Put Wall</span><span class="v">$230</span><span class="k">FlashAlpha 2026-10-02 · 支撑参考</span></div>
-        <div class="datum"><span class="k">Max Pain</span><span class="v">$200</span><span class="k">OptiView 2026-10-01 · 做市商对冲参考位</span></div>
-        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.86</span><span class="k">Call 7,786,515 张／Put 6,691,306 张 · OptiView 2026-10-01</span></div>
-        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">27.0%</span><span class="k">FlashAlpha 2026-10-02；OptiView 2026-10-01 为 29.6%，IV Rank 0/100</span></div>
-        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$13.89</span><span class="k">±6.0% · OptiView 2026-10-01</span></div>
+        <div class="datum"><span class="k">Max Pain（全部到期日口径）</span><span class="v">$200</span><span class="k">OptiView 2026-10-02 · 距 10/2 收盘 −14.5% · 做市商对冲参考位</span></div>
+        <div class="datum"><span class="k">Put-Call 未平仓比</span><span class="v">0.86</span><span class="k">Call 未平仓 7,958,510 张 · Put 未平仓 6,861,042 张 · OptiView 2026-10-02</span></div>
+        <div class="datum"><span class="k">30 天 ATM IV</span><span class="v">27.0%</span><span class="k">FlashAlpha 2026-10-02；OptiView 2026-10-02 为 28.3%，IV Rank 0/100</span></div>
+        <div class="datum"><span class="k">期权隐含预期波幅</span><span class="v">±$15.92</span><span class="k">约 ±6.8% · OptiView 2026-10-02</span></div>
+        <div class="datum"><span class="k">现价位置（10/2 收盘 vs Wall）</span><span class="v">$233.95</span><span class="k">收盘 $233.95，Call Wall $235 在上方约 0.4%（贴近上墙）；Put Wall $230 在下方约 1.7%</span></div>
+        <div class="datum"><span class="k">成交异动（OptiView 2026-10-02）</span><span class="v">$235 最热</span><span class="k">当日成交最热行权价 $235；全链成交量 / 未平仓量比 3.74（成交远超存量，短线博弈热度高）</span></div>
       </div>
 
-      <p style="margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.7">数据来源：FlashAlpha 2026-10-02 14:01 ET 盘中快照（净 GEX、Call/Put Wall、30 天 ATM IV）；OptiView 2026-10-01 15:55 ET（Call/Put 未平仓量与 P/C 比、ATM IV、IV Rank、Max Pain、预期波幅）——两源日期分开标注，不混用。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</p>
+      <p style="margin:12px 0 0;font-size:12px;color:var(--muted);line-height:1.7">数据来源：FlashAlpha 2026-10-02 14:01 ET 盘中快照（净 GEX、Call/Put Wall、30 天 ATM IV）；OptiView 2026-10-02（Call/Put 未平仓量与 P/C 比、ATM IV、IV Rank、Max Pain、预期波幅）——两源日期分开标注，不混用。Max Pain 为全部到期日合约口径，包含远月合约，数值通常低于最近到期口径，两者不可直接比较。Call/Put Wall 与 Max Pain 为做市商对冲参考位，不构成买卖建议。Gamma Flip 各模型分歧较大，本板块不列固定数值。GEX 正负基于“做市商持有与公开订单流相反头寸”的模型假设。</p>
     </section>
 
     <section class="section" id="financials">
@@ -669,7 +671,7 @@
       </article>
     </section>
 
-    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>图表与图内统计直接按机器可读日收盘序列（Finnhub 日线 7/2–9/30 + 10/01、10/02 收盘；与 Nasdaq 官方 API 收盘价交叉确认）绘制，未复权口径（9/10 除息 $0.25）。10/02 开盘价 $236.05、盘中高低 $237.88 / $233.60 与成交量 135.07M 股为 Nasdaq 官方 API 口径。期权结构两源日期分开标注（FlashAlpha 2026-10-02 14:01 ET 盘中快照；OptiView 2026-10-01 15:55 ET，尚未滚动至 10-02）。目标价 BofA $350 来自 blockchain.news 汇总口径，未找到带日期的原始研报；BMO 评级（Outperform）与日期（2026-08-20）经 thecerbatgem（2026-10-01）核实；Stifel / Melius / KGI / Phillip 评级未找到（目标价分别经 thecerbatgem / fxleaders 核实）；Jefferies 与 Deutsche Bank 当前目标价未找到（Deutsche 的旧 $255 / Hold 为约 87 天前数据，已过时，未采用）。FINRA 做空为 2026-09-15 结算期（最新已发布；9/30 结算期约 10/12 发布，本周无更新）。CES 2027 官方日期未找到，标注为惯例时间。借券利用率与借券费率无免费公开源，未呈现也未估算。单源数据已在相应条目逐项标注。</section>
+    <section class="source-note"><strong>研究完整性（数据基准日 2026-10-02，调研日期 2026-10-03）：</strong>图表与图内统计直接按机器可读日收盘序列（Finnhub 日线 7/2–9/30 + 10/01、10/02 收盘；与 Nasdaq 官方 API 收盘价交叉确认）绘制，未复权口径（9/10 除息 $0.25）。10/02 开盘价 $236.05、盘中高低 $237.88 / $233.60 与成交量 135.07M 股为 Nasdaq 官方 API 口径。期权结构两源日期分开标注（FlashAlpha 2026-10-02 14:01 ET 盘中快照；OptiView 2026-10-02 15:55 ET）。目标价 BofA $350 来自 blockchain.news 汇总口径，未找到带日期的原始研报；BMO 评级（Outperform）与日期（2026-08-20）经 thecerbatgem（2026-10-01）核实；Stifel / Melius / KGI / Phillip 评级未找到（目标价分别经 thecerbatgem / fxleaders 核实）；Jefferies 与 Deutsche Bank 当前目标价未找到（Deutsche 的旧 $255 / Hold 为约 87 天前数据，已过时，未采用）。FINRA 做空为 2026-09-15 结算期（最新已发布；9/30 结算期约 10/12 发布，本周无更新）。CES 2027 官方日期未找到，标注为惯例时间。借券利用率与借券费率无免费公开源，未呈现也未估算。单源数据已在相应条目逐项标注。</section>
 
     <footer>价格卡可刷新实时报价；其余为截至 2026-10-02 美股收盘的静态研究快照，不构成证券研究报告或投资建议。引用链接打开第三方原始页面。</footer>
   </main>
